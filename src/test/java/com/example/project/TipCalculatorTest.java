@@ -2,6 +2,8 @@ package com.example.project;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.text.DecimalFormat;
+
 public class TipCalculatorTest {
     @Test
     void testCalculateTip(){
@@ -18,7 +20,7 @@ public class TipCalculatorTest {
                                 "Tip per person: $2.18\n" +
                                 "Total cost per person: $10.89\n" +
                                 "-------------------------------\n";
-        String studentOutput = calculator.calculateTip(people,percent, cost);
+        String studentOutput = calculator.calculateTip(people, percent, cost);
         assertEquals(expectedOutput,studentOutput);
     }
     @Test
